@@ -92,10 +92,10 @@
 
         games {
             bindings = <
-         &kp N1     &kp N2  &kp N3   &kp N4     &kp N5    &trans  &trans  &trans  &trans  &trans
-         &kp LSHFT  &kp A   &kp W    &kp D      &kp R     &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp LCTRL  &kp Q   &kp S    &kp E      &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-                            &lt 0 P  &kp SPACE  &kp M     &trans  &trans  &trans
+         &kp N1     &kp N2  &kp N3   &kp N4     &kp N5    &kp PRINTSCREEN  &trans         &kp C_RECORD      &trans            &trans
+         &kp LSHFT  &kp A   &kp W    &kp D      &kp R     &trans           &kp C_AC_BACK  &kp C_PLAY_PAUSE  &kp C_AC_FORWARD  &trans
+&kp TAB  &kp LCTRL  &kp Q   &kp S    &kp E      &kp F     &trans           &trans         &trans            &trans            &trans  &trans
+                            &lt 0 P  &kp SPACE  &kp M     &trans           &trans         &trans
             >;
         };
 
@@ -110,10 +110,10 @@
 
         layer_4 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp INSERT       &kp HOME        &kp PAGE_UP      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp DELETE       &kp END         &kp PAGE_DOWN    &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans           &trans          &trans
             >;
         };
     };
