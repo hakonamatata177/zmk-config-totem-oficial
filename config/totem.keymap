@@ -11,7 +11,6 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -51,6 +50,11 @@
             bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <11 1 0>;
+        };
     };
 
     keymap {
@@ -65,10 +69,10 @@
 
         skriv {
             bindings = <
-          &kp Q  &kp W  &kp E  &kp R           &kp T        &kp Y   &kp U   &kp I   &kp O   &kp P
-          &kp A  &kp S  &kp D  &kp F           &kp G        &kp H   &kp J   &kp K   &kp L   &trans
-&kp LWIN  &kp Z  &kp X  &kp C  &kp V           &kp B        &kp N   &kp M   &trans  &trans  &trans  &bt BT_CLR_ALL
-                        &kp A  &bt BT_CLR_ALL  &kp SPACE    &trans  &trans  &trans
+          &kp Q  &kp W  &kp E   &kp R       &kp T        &kp Y          &kp U      &kp I      &kp O   &kp P
+          &kp A  &kp S  &kp D   &kp F       &kp G        &kp H          &kp J      &kp K      &kp L   &trans
+&kp LWIN  &kp Z  &kp X  &kp C   &kp V       &kp B        &kp N          &kp M      &trans     &trans  &kp COMMA  &kp PERIOD
+                        &tog 1  &kp LSHIFT  &kp SPACE    &kp RIGHT_ALT  &kp LCTRL  &kp MINUS
             >;
         };
 
