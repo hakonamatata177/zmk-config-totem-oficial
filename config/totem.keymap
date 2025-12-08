@@ -87,14 +87,14 @@
 
         games {
             bindings = <
-         &kp N1     &kp N2  &kp N3  &kp N4     &kp N5    &trans  &trans  &trans  &trans  &trans
-         &kp LSHFT  &kp Q   &kp W   &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp LCTRL  &kp A   &kp S   &kp D      &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-                            &kp P   &kp SPACE  &kp M     &trans  &trans  &trans
+         &kp N1     &kp N2  &kp N3   &kp N4     &kp N5    &trans  &trans  &trans  &trans  &trans
+         &kp LSHFT  &kp A   &kp W    &kp D      &kp R     &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp LCTRL  &kp Q   &kp S    &kp E      &kp F     &trans  &trans  &trans  &trans  &trans  &trans
+                            &lt 0 P  &kp SPACE  &kp M     &trans  &trans  &trans
             >;
         };
 
-        layer_3 {
+        fusion {
             bindings = <
           &trans  &kp H  &kp Q   &kp E  &kp F    &trans  &trans  &trans  &trans  &trans
           &kp O   &kp I  &kp D   &kp L  &kp P    &trans  &trans  &trans  &trans  &trans
